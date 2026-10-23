@@ -1,8 +1,0 @@
-<resources>
-    <style name="Theme.ChatAndTalk" parent="android:Theme.Material.Light.NoActionBar">
-        <item name="android:windowBackground">@color/cream</item>
-        <item name="android:statusBarColor">@color/cream</item>
-        <item name="android:navigationBarColor">@color/cream</item>
-        <item name="android:windowLightStatusBar">true</item>
-    </style>
-</resources>
