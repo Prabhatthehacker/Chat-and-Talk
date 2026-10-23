@@ -1,0 +1,33 @@
+# Pupper
+
+Pupper is a messaging platform with a Firebase backend and a Catbox.moe upload flow for photos and files.
+
+## Project layout
+
+- `web/` — React + TypeScript website
+- `android/` — Android app
+- `backend/` — Firebase emulator/testing utilities
+- `functions/` — optional backend jobs
+- `docs/` — setup and deployment notes
+
+## Branding
+
+The app name is now Pupper and the logo matches the provided dog mark.
+
+## Deployment
+
+- Firebase Auth + Firestore: chat users, messages and groups
+- Catbox.moe: file and photo uploads up to 200 MB per file
+- Firebase Hosting: website deployment
+
+## Quick start
+
+1. Create a Firebase project.
+2. Enable Email/Password auth.
+3. Deploy Firestore rules.
+4. Set Firebase web config in `web/.env.local`.
+5. Optionally set `VITE_CATBOX_USERHASH` and `VITE_MAX_UPLOAD_MB=200`.
+6. Run `npm install` and `npm run build` inside `web/`.
+7. Deploy the `web/dist` folder with Firebase Hosting.
+
+This project also includes Catbox upload validation for the 200 MB per file limit.
